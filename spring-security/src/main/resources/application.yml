@@ -1,0 +1,28 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/springsecurity
+    username: whitewise
+    password: 1111
+
+  thymeleaf:
+    cache: false
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+  main:
+    allow-bean-definition-overriding: true
+
+logging.level:
+  org.hibernate.SQL: debug
+  org.hibernate.type: trace
+

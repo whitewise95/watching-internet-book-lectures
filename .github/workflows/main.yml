@@ -19,7 +19,7 @@ jobs:
 
       - name: Update README for top-level directories
         run: |
-          echo "# watching-internet-book-lectures" > README.md
+          echo "# 인터넷강의 또는 책 보고 따라한 프로젝트" > README.md
           REPO_URL="https://github.com/whitewise95/Test"
           find . -mindepth 1 -maxdepth 1 -type d -not -path '*/\.*' -exec sh -c '
                   dir=$(basename {});
